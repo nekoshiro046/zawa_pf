@@ -37,15 +37,23 @@
             <img class = "title" src="assets/images/logo.png"">
             </a>
         </header>
-        <nav id="menu">
-            <div id="menu-bt"><p>Menu</p></div>
-            <ul class="head-list">
-                <li><a href="#">TOP</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">CLOSE</a></li>
-                    <!-- <li id="page-top" onclick="toMenu()"><a href="#">menu</a></li> -->
-            </ul>
+        <nav>
+            <div class="toggle_wrap">
+                <div class="topLine"></div>
+                <div class="toggle_switch">
+                    <p>-Menu</p>
+                </div>
+                <div class="toggle_contents">
+                    <a href="#"><span><p class="hoverArrow">TOP</p></span></a>
+                    <a href="#about"><span><p class="hoverArrow">ABOUT</p></span></a>
+                    <a ><span><p class="hoverArrow2 toggle_switch2">WORK</p></span></a>
+                    <div class="toggle_contents2">
+                        <a href="#video"><span><p class="hoverText">Video</p></span></a>
+                        <a href="#sound"><span><p class="hoverText">Sound</p></span></a>
+                        <a href="#graphics"><span><p class="hoverText">Graphics</p></span></a>
+                    </div>
+                </div>    
+            </div>
         </nav>
 
         <main>  
@@ -61,14 +69,15 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="p-margin" id = "about"> </p>
                         <div class="p-contaioner fadein">
-                            <!-- <div class="nameBox">
-                                <ul>
-                                    <li><h3 style="letter-spacing: 8px;">TAISEI ITO</h3></li>
-                                    <li><h3 style="letter-spacing: 6px;">| 伊藤 大晴</h3></li>
+                            <div class="nameBox">
+                                <ul class="nameItem">
+                                    <li style="font-size: 60px;">TAISEI ITO</li>
+                                    <li style="font-size: 40px;">| 伊藤 大晴</li>
                                 </ul>
-                            </div> -->
-                            <h3 style="letter-spacing: 8px;">TAISEI ITO | 伊藤 大晴</h3>
+                            </div>
+                            <!-- <h3 style="letter-spacing: 8px;">TAISEI ITO | 伊藤 大晴</h3> -->
                             <p class="p-margin">BORN IN 1999</p>
                             <p>STUDENT AT NAGOYA CITY UNIVERCITY.</p>
                             <p>SCHOOL OF DESIGN AND ARCHITECTURE,DEPT. INFORMATICS AND MEDIA DESIGN.</p>
@@ -100,6 +109,7 @@
                 <div class="works-box">
                     <works>
                     <span id="works">
+                        <p class="p-margin" id = "video"> </p>
                         <h3 class="categoryTitle fadein">Video</h3>
                         <div class="mov-box">
                         <iframe class="mov-container" src="https://player.vimeo.com/video/355798761" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
@@ -149,6 +159,7 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="p-margin" id = "sound"> </p>
                         <h3 class="categoryTitle fadein">Sound</h3>
                         <div class="worksCategory fadein">
                             <div id="containerWrapper">
@@ -188,6 +199,7 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="p-margin" id = "graphics"> </p>
                         <h3 class="categoryTitle fadein">Graphic</h3>
                         <div class="worksCategory fadein">
                             <div id="containerWrapper">
@@ -217,6 +229,7 @@
         </main>
 
         <footer>
+            <p class="p-margin"> </p>
         </footer>
         </div>
     <script src="js/sistem.js"></script>

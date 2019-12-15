@@ -49,11 +49,24 @@ function imgLoad(){
 	});
 }
 $(function() {
-	$("#menu").css("display","none");
-   	$("#menu-bt").on("click", function() {
-      $("#menu").slideToggle(300);
-      $(this).toggleClass("active");
-   });
+	$('.toggle_switch').on('click',function(){
+		var p = $(this).hasClass('open');
+		if(p){
+			$(this).html("<p>-Menu</p>");
+		}else{
+			$(this).html("<p>-Close</p>");
+			$(this).css('display', 'none').fadeIn(1000);
+		}
+		$(this).toggleClass('open');
+		$(this).next('.toggle_contents').slideToggle();	
+	});
+	$('.toggle_switch2').on('click',function(){
+		$('.toggle_contents2').slideToggle();
+		if(!$('.toggle_contents2').is(':visible')) {
+			$('.toggle_contents2').fadeOut(500);
+		}else{
+		}
+	});
 
 	$('html,body').animate({ scrollTop: 0 }, '1');
 	jQuery(window).scroll(function (){
