@@ -55,7 +55,7 @@ $(function() {
 			$(this).html("<p>-Menu</p>");
 		}else{
 			$(this).html("<p>-Close</p>");
-			$(this).css('display', 'none').fadeIn(1000);
+			// $(this).css('display', 'none').fadeIn(1000);
 		}
 		$(this).toggleClass('open');
 		$(this).next('.toggle_contents').slideToggle();	
