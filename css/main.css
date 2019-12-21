@@ -167,6 +167,23 @@ ul {
   z-index: 2;
   /*border-bottom: groove #000000;*/
 }
+.menu-border {
+  display: flex;
+  align-items: center;
+  width: 30px;
+}
+.menu-border:before{
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 0.25;
+  /*padding-right: 20px;*/
+}
+.menu-border:before {
+  margin-right: 0.5rem;
+}
+/*.title-border:after {
+margin-left: 1rem;
+}*/
 .toggle_wrap{
   position: relative;
   width: 50%;

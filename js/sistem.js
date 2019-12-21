@@ -52,9 +52,9 @@ $(function() {
 	$('.toggle_switch').on('click',function(){
 		var p = $(this).hasClass('open');
 		if(p){
-			$(this).html("<p>-Menu</p>");
+			$(this).html('<p class="menu-border"> Menu</p>');
 		}else{
-			$(this).html("<p>-Close</p>");
+			$(this).html('<p class="menu-border"> Close</p>');
 			// $(this).css('display', 'none').fadeIn(1000);
 		}
 		$(this).toggleClass('open');
