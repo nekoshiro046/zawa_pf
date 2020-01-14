@@ -74,7 +74,7 @@ $(function() {
             var elemPos = jQuery(this).offset().top;
             var scroll = jQuery(window).scrollTop();
             var windowHeight = jQuery(window).height();
-            if (scroll > elemPos - windowHeight + 225){
+            if (scroll > elemPos - windowHeight + 200){
                 jQuery(this).addClass('scrollin');
             }
         });
@@ -83,7 +83,7 @@ $(function() {
             var elPos = jQuery(this).offset().top;
             var scroll = jQuery(window).scrollTop();
             var windowHeight = jQuery(window).height();
-            if (scroll > elPos - windowHeight + 250){
+            if (scroll > elPos - windowHeight + 225){
                 jQuery(this).addClass('scrollin');
             }
         });
