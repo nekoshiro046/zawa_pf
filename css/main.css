@@ -595,7 +595,19 @@ ul.nameItem li{
   padding: 0;
   margin: 0;
 }
+.item_4UI {
+  width: calc(100% / 2);
+  /*height: auto;*/
+  padding: 0;
+  margin: 0;
+}
 .item img{ 
+  width: 100%; 
+  height: 100%;
+  vertical-align: bottom;
+  margin: 0;
+}
+.item_4UI img{
   width: 100%; 
   height: 100%;
   vertical-align: bottom;

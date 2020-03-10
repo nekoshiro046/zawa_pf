@@ -38,12 +38,12 @@ function imgLoad(){
 	});
 	imagesLoaded(container3, function () {
 	    var msnry = new Masonry(container3, {
-	        itemSelector: '.item',
+	        itemSelector: '.item_4UI',
 	        fitWidth: true,
 	        initLayout: true,
 	        // columnWidth: 0,
 	        // columnHeight: 0
-	        columnWidth: '.item'
+	        columnWidth: '.item_4UI'
 	    });
 	    msnry.layout();
 	});
