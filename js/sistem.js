@@ -67,7 +67,14 @@ $(function() {
 		}else{
 		}
 	});
-
+	$('.Reel').on('click',function(){
+		var p = $(this).hasClass('played');
+		if(!p){
+			$(this).html('<iframe class="mov-container fadein" src="https://www.youtube.com/embed/RAF2EPdNqpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+			$('html,body').animate({ scrollTop: 1 }, '0.1');
+			$(this).toggleClass('played');
+		}
+	});
 	$('html,body').animate({ scrollTop: 0 }, '1');
 	jQuery(window).scroll(function (){
         jQuery('.underline').each(function(){
